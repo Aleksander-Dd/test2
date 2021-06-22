@@ -1,0 +1,24 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	int n = 10;     // объявление и инициализация переменной
+	int x = n % 2; // 10/2 = 5
+	boolean y = x > 0;   // проверка на четность
+	
+	if (y == false)
+{
+    System.out.println("Четное число");
+}
+else
+{
+System.out.println("Нечетное число");
+}
+
+
+	}
+}
