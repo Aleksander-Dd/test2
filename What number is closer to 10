@@ -1,0 +1,37 @@
+/* package whatever; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	int n = 7;     // Задаем первую переменную
+	int m = 22;    // Задаем уторую переменную
+	
+	int nn = n - 10; // -3 результат
+	int mm = m - 10; // 12 результат 
+	
+	
+	if (nn<0) nn=nn*-1; // Если число отрицательное переводим в положительное
+	if (mm<0) mm=mm*-1; // Если число отрицательное переводим в положительное
+
+if (nn<mm) 	{
+    System.out.println("n ближе к 10"); // Выводим ответ1
+}
+if (nn>mm) 	{
+    System.out.println("m ближе к 10"); // Выводим ответ2
+}
+if (nn==mm) 	{
+    System.out.println("Равноудаленные"); // Выводим ответ3
+}
+	
+	
+	
+
+
+	}
+}
