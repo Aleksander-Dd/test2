@@ -1,0 +1,31 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+ 
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		int[][] a=new int[5][8]; //задаем размер массива
+		for (int i=0;i < a.length;i++){
+    		for (int j=0;j < a[i].length;j++){
+    			a[i][j]= -99 + (int)(Math.random()*197); //задаем диапазон
+    		}
+    	}
+		for (int i=0;i < a.length;i++,System.out.println()){
+			for (int j=0;j < a[i].length;j++){
+				System.out.print(a[i][j]+" "); //выводим массив
+			}
+		}
+		int maxi = -99;
+		for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 8; j++) {
+                if (a[i][j] > maxi) {
+                    maxi = a[i][j];
+                }
+            }
+        }
+        System.out.print("Максимальное значение " + maxi);
+	}
+}
